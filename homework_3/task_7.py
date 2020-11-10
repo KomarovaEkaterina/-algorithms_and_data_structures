@@ -13,7 +13,7 @@ second_min = arr[1]
 
 print(f'Массив: {arr}')
 
-for i in range(LEN_OF_ARR):
+for i in range(len(arr)):
     if arr[i] < first_min:
         second_min = first_min
         first_min = arr[i]

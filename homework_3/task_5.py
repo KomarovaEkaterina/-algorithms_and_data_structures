@@ -12,7 +12,7 @@ maximum = 0
 
 print(f'Массив: {arr}')
 
-for i in range(LEN_OF_ARR):
+for i in range(len(arr)):
     if arr[i] < 0 and pos == -1:
         maximum = arr[i]
         pos = i

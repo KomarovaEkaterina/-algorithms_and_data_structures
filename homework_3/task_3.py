@@ -9,10 +9,10 @@ arr = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(LEN_OF_ARR)]
 
 print(f'Начальный массив: {arr}')
 
-for i in range(LEN_OF_ARR):
+for i in range(len(arr)):
     greatest = 0
     smallest = 0
-    for j in range(LEN_OF_ARR):
+    for j in range(len(arr)):
         if arr[i] < arr[j]:
             greatest += 1
         if arr[i] > arr[j]:

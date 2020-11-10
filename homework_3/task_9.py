@@ -10,18 +10,18 @@ matrix = [[random.randint(MIN_ITEM, MAX_ITEM) for _ in range(NUM_OF_COL)] for _ 
 
 maximum = 'max'
 
-for x in range(NUM_OF_LEN):
+for x in range(len(matrix)):
     print(matrix[x])
 
-for i in range(NUM_OF_COL):
+for i in range(len(matrix[0])):
     minimum = matrix[0][i]
-    for j in range(NUM_OF_LEN):
+    for j in range(len(matrix)):
         if matrix[j][i] < minimum:
             minimum = matrix[j][i]
 
     if maximum == 'max':
         maximum = minimum
-    elif minimum > minimum:
+    elif minimum > maximum:
         maximum = minimum
 
 print(f'Максимальный элемент среди минимальных: {maximum}')
