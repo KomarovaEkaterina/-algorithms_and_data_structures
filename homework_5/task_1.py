@@ -2,7 +2,7 @@
 # для каждого предприятия. Программа должна определить среднюю прибыль (за год для всех предприятий)
 # и отдельно вывести наименования предприятий, чья прибыль выше среднего и ниже среднего.
 
-from collections import defaultdict, deque
+from collections import defaultdict
 
 
 companies = defaultdict(float)
